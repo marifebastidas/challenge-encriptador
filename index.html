@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css" media="(min-width:768px)">
+    <link rel="stylesheet" href="./desktop.css" media="(min-width:1024px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>     
+            <img class="logo-alura" src="./images/logo.svg" alt="Logo de Alura Latam">       
+    </header>
+   
+    <main>
+        <div class="container">
+            <form action="#" class="request-container">
+                <label for="palabraEncriptada"></label>
+                <input type="text" id="typedText" placeholder="Ingrese el texto aqui." value="">
+                <p id="resultadoDesencriptado"></p>               
+            </form>
+            <article class="instructions-container">                     
+                <p class="instructions-text"><span></span>Solo letras minúsculas y sin acentos</p>                   
+            </article>
+            <div class="button-container">
+                <button id="btn-encrypt" class="encrypt-button">Encriptar</button>
+                <button onclick="desencriptar()" class="decrypt-button">Desencriptar</button>
+            </div>
+            <article class="response-container">
+                <div id="mi-recuadro">
+                    <img src="./images/muneco.svg" alt="Dibujo de un niño con una lupa observando un diamante">
+                    <h3 class="response-title">Ningún mensaje fue encontrado</h3>
+                    <p class="response-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <p id="resultado" class="resultadoEncriptado"></p>
+                <button id="copiar-boton" class="copy-button">Copiar</button>
+
+                
+            </article>
+        </div>
+    </main>
+   
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+</html>
